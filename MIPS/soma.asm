@@ -19,7 +19,7 @@ for1:
 
 for1_fim:
 	addi $s5, $s5, 1 #i++
-	addi $s6, $s6, 0 #j=0
+	addi $s6, $0, 0 #j=0
 	j for1
 	
 for2:
@@ -51,7 +51,7 @@ for2:
 	add $t0, $t2,$t3
 	sw $t0, 0($t1) #Escrever a soma no elemento C[i][j]
 		
-	addi $t1, $t1, 1 #j++	
+	addi $s6, $s6, 1 #j++	
 	j for2
 	
 done:

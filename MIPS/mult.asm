@@ -22,8 +22,8 @@ for1:
 
 for1_fim:
 	addi $s5, $s5, 1 #i++
-	addi $s6, $s6, 0 #j=0
-	addi $s7, $s7, 0 #k=0
+	addi $s6, $0, 0 #j=0
+	addi $s7, $0, 0 #k=0
 	j for1
 	
 for2:
@@ -42,7 +42,7 @@ for2_fim:
 	
 	addi $t3, $0, 0 #sum=0
 	addi $s6, $s6, 1 #j++
-	addi $s7, $s7, 0 #k=0
+	addi $s7, $0, 0 #k=0
 	
 
 	j for2 	
@@ -73,19 +73,3 @@ for3:
 	j for3
 	
 done:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
